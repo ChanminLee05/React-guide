@@ -1,0 +1,100 @@
+.landscape-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.landscape-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.react-icon {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9rem;
+    color: #61dafb;
+    z-index: 3;
+    background-color: #20232a;
+    padding: 0 0.7vw;
+    border-radius: 50%;
+    opacity: 0;
+    transition: top 2s, opacity 2s ease-in-out, font-size 3s ease;
+}
+
+.react-icon.show {
+    top: 50%;
+    opacity: 1;
+    font-size: 3rem;
+}
+
+.landscape-txt-container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title, .sub-title1, .sub-title2 {
+    color: transparent;
+    text-transform: uppercase;
+    position: relative;
+}
+.title {
+    font-size: 4.7vw;
+    transform: perspective(100px) rotateX(-10deg);
+    padding: 1vw 0;
+}
+.sub-title1 {
+    font-size: 2.5vw;
+    margin-top: 5vw;
+}
+.sub-title2 {
+    font-size: 2.5vw;
+    margin-top: 2vw;
+}
+
+.title:before, .sub-title1:before, .sub-title2:before {
+    content: attr(data-text);
+    position: absolute;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fillFromLeft 1.5s linear forwards;
+}
+.title:before {
+    top: 0;
+    left: 0;
+}
+.sub-title1:before {
+    top: 6vw;
+    left: 0;
+    animation-delay: 2s;
+}
+.sub-title2:before {
+    top: 6vw;
+    left: 0;
+    animation-delay: 4s;
+}
+
+@keyframes fillFromLeft {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+        color: white;
+    }
+}

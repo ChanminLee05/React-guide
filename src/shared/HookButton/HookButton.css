@@ -1,0 +1,32 @@
+.hook-btn {
+    width: 8vw;
+    height: 5vh;
+    border-radius: 50px;
+    background: white;
+    font-size: 1vw;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.hook-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: white;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+.hook-btn:hover {
+    background: linear-gradient(to right, #189AB4, #75E6DA, #D4F1F4);
+}
+.hook-btn:hover::before {
+    width: 0;
+    height: 0;
+    opacity: 1;
+}

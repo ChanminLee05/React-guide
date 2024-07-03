@@ -1,0 +1,14 @@
+.youtube-iframe {
+    width: calc(25% - 10px);
+    height: 20vw;
+    margin-right: 2vw;
+    background-color: rgba(173, 193, 211, 0.8);
+    padding: 5vw 2vw 2vw 2vw;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+}
+
+.youtube-iframe:hover {
+    transform: translateY(-10px);
+}

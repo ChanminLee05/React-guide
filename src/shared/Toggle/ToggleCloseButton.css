@@ -1,0 +1,45 @@
+:root {
+    --softorange: #F4A259;
+    --tomatored: #F25C66;
+    --mediumblu: #1E272D;
+}
+
+.close-container{
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.leftright{
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    margin-top: 15px;
+    background-color: var(--softorange);
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+
+.rightleft{
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    margin-top: 15px;
+    background-color: var(--softorange);
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+
+.close-container:hover .leftright{
+    transform: rotate(-45deg);
+    background-color: var(--tomatored);
+}
+.close-container:hover .rightleft{
+    transform: rotate(45deg);
+    background-color: var(--tomatored);
+}

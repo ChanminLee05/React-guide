@@ -1,0 +1,9 @@
+.jsx-header {
+    background: linear-gradient(to left, var(--color-6), #d2bf96);
+}
+.jsx-body ul {
+    list-style-type: none;
+}
+.jsx-body h5 {
+    margin-bottom: 1vw;
+}

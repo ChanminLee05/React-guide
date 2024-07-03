@@ -1,0 +1,20 @@
+.common-page {
+    font-size: 1.2vw;
+}
+.state-header {
+    background: linear-gradient(to right, var(--color-6), #fde086);
+}
+.common-card-title {
+    color: white;
+    font-size: 3vw;
+}
+
+.common-body {
+    padding: 2vw 3vw;
+}
+.common-body h3 {
+    margin-top: 3vw;
+}
+.common-body li {
+    margin-top: 1.5vw;
+}

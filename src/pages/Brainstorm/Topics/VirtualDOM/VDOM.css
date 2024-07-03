@@ -1,0 +1,34 @@
+.vdom-page {
+    display: flex;
+    justify-content: center;
+    background: url("../../../../assets/mirror2.jpg") no-repeat center;
+    background-size: cover;
+}
+.vdom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2vw;
+    background-color: rgba(255,255,255,0.5);
+}
+.vdom-header {
+    background-color: var(--color-4);
+    margin-bottom: 2vw;
+}
+.vdom-card-title {
+    font-size: 2.5vw;
+    color: white;
+}
+.vdom-body {
+    width: 80%;
+}
+.vdom-body > h2 {
+    font-size: 2vw;
+}
+.vdom-body > p {
+    font-size: 1vw;
+}
+.vdom-body > ul {
+    font-size: 1vw;
+}

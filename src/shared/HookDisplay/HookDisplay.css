@@ -1,0 +1,41 @@
+.hook-display {
+    display: flex;
+    width: 56vw;
+    height: 28%;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.hook-display .bi.bi-copy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.copy-message {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    right: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.bi.bi-copy:hover + .copy-message {
+    visibility: visible;
+    opacity: 1;
+}

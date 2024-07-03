@@ -1,0 +1,11 @@
+.rendering-header {
+    position: relative;
+    background: linear-gradient(to left, var(--color-2), #e8b7ab);
+}
+.rendering-type-title {
+    list-style-type: none;
+    font-size: 2vw;
+}
+.summary-container {
+    padding-left: 2vw;
+}

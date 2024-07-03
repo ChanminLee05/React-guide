@@ -1,0 +1,28 @@
+.component-page {
+    font-size: 1.2vw;
+}
+.component-header {
+    position: relative;
+    background: linear-gradient(to right bottom, var(--color-1), #e8b7ab, var(--color-1));
+}
+.component-card-title {
+    color: white;
+    font-size: 3vw;
+}
+.component-body {
+    padding: 2vw 3vw;
+}
+.component-body h3 {
+    margin-top: 3vw;
+}
+.component-type-title {
+    list-style-type: none;
+    font-size: 2vw;
+}
+.component-body li {
+    margin-top: 1.5vw;
+}
+
+.summary-container {
+    padding-left: 2vw;
+}

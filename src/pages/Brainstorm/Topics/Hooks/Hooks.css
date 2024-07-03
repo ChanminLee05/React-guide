@@ -1,0 +1,52 @@
+.hook-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../../../../assets/Hook-background.jpg") no-repeat center;
+    background-size: cover;
+}
+.hook-header {
+    padding-top: 2vw;
+    flex-direction: column;
+    background: linear-gradient(to right, #def3f6, #7fcdff);
+}
+.hook-header-title {
+    font-size: 3vw;
+    padding: 2vw 0;
+}
+.hook-btn-container {
+    display: flex;
+    column-gap: 1vw;
+}
+
+/*Hook-Container*/
+.hook-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60vw;
+    padding: 2vw 1vw;
+    margin: 8vw 0 2vw 0;
+    font-size: 1.2vw;
+    background-color: rgba(234, 233, 233, 0.5);
+    border-radius: 10px;
+}
+.use-state-container {
+    padding: 0 1vw;
+    margin: 5vw 0 2vw 0;
+}
+.hook-container > h1 {
+    align-self: center;
+    margin-top: 2vw;
+}
+.hook-container > p {
+    text-align: left;
+}
+.hook-container > ol {
+    padding-left: 20px;
+}
+.hook-container > ol > li {
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}

@@ -1,0 +1,9 @@
+.ref-header {
+    background: linear-gradient(to right, var(--color-5), #cae5c0);
+}
+.ref-body-top {
+    padding-left: 2vw;
+}
+.ref-body ul {
+    list-style-type: none;
+}

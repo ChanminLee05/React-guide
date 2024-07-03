@@ -1,0 +1,216 @@
+.brainstorming-page {
+
+}
+
+.brainstorming-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 100px;
+}
+
+.central-topic {
+    position: absolute;
+    top: 49vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    z-index: 3;
+    cursor: pointer;
+}
+.topic {
+    position: absolute;
+    font-size: 1.5vw;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    text-align: center;
+    animation: zoomIn 1s ease-in-out;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.sub-topic {
+    position: absolute;
+    font-size: 1vw;
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50%;
+    text-align: center;
+    animation: zoomIn 2.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.topic:hover {
+    transform: scale(1.1);
+    z-index: 20;
+}
+.sub-topic:hover {
+    transform: scale(1.1);
+}
+
+/*Topic Color*/
+:root {
+    --color-1: #e57373;
+    --color-2: #ba68c8;
+    --color-3: #7986cb;
+    --color-4: #7076cb;
+    --color-5: #81c784;
+    --color-6: #ffb74d;
+    --color-7: #a1887f;
+    --color-8: #90a4ae;
+    --color-9: #f06292;
+    --color-10: #64b5f6;
+    --color-11: #66bb6a;
+    --color-12: #f9a825;
+    --color-13: #9c27b0;
+    --color-14: #1e88e5;
+}
+
+/*Topic-position*/
+.topic-1 { background-color: var(--color-1); top: 20%; right: 46%; }
+.topic-2 { background-color: var(--color-2); top: 25%; right: 35%; }
+.topic-3 { background-color: var(--color-3); top: 35%; right: 25%; }
+.topic-4 { background-color: var(--color-4); top: 49%; right: 22%; }
+.topic-5 { background-color: var(--color-5); top: 61%; right: 23%; }
+.topic-6 { background-color: var(--color-6); top: 70%; right: 28%; }
+.topic-7 { background-color: var(--color-7); top: 77%; right: 38.5%; }
+.topic-8 { background-color: var(--color-8); top: 80%; left: 47%; }
+.topic-9 { background-color: var(--color-9); top: 77%; left: 38%; }
+.topic-10 { background-color: var(--color-10); top: 70%; left: 28%; }
+.topic-11 { background-color: var(--color-11); top: 60%; left: 23%; }
+.topic-12 { background-color: var(--color-12); top: 49%; left: 22%; }
+.topic-13 { background-color: var(--color-13); top: 35%; left: 25%; }
+.topic-14 { background-color: var(--color-14); top: 25%; left: 35%; }
+
+/*SubTopic-position*/
+.topic-1 .sub-topic-1-1 { background-color: var(--color-1); top: -5vw; left: -3vw; }
+.topic-1 .sub-topic-1-2 { background-color: var(--color-1); top: -5vw; left: 6vw; }
+
+.topic-2 .sub-topic-2-1 { background-color: var(--color-2); top: -5vw; left: 3vw; }
+
+.topic-3 .sub-topic-3-1 { background-color: var(--color-3); top: -6vw; left: -3vw; }
+.topic-3 .sub-topic-3-2 { background-color: var(--color-3); top: -6vw; left: 3vw; }
+.topic-3 .sub-topic-3-3 { background-color: var(--color-3); top: -5vw; left: 9vw; }
+.topic-3 .sub-topic-3-4 { background-color: var(--color-3); top: -2vw; left: 12vw; }
+.topic-3 .sub-topic-3-5 { background-color: var(--color-3); top: 1vw; left: 10vw; }
+.topic-3 .sub-topic-3-6 { background-color: var(--color-3); top: 4vw; left: 8vw; }
+
+.topic-4 .sub-topic-4-1 { background-color: var(--color-4); top: 3vw; left: 10vw; }
+
+.topic-5 .sub-topic-5-1 { background-color: var(--color-5); top: 2vw; left: 6vw; }
+
+.topic-6 .sub-topic-6-1 { background-color: var(--color-6); top: 1vw; left: 6vw; }
+.topic-6 .sub-topic-6-2 { background-color: var(--color-6); top: 6vw; left: 5vw; }
+.topic-6 .sub-topic-6-3 { background-color: var(--color-6); top: 7vw; left: -2vw; }
+
+.topic-7 .sub-topic-7-1 { background-color: var(--color-7); top: 5vw; left: 2vw; }
+
+.topic-8 .sub-topic-8-1 { background-color: var(--color-8); top: 5vw; left: -3vw; }
+.topic-8 .sub-topic-8-2 { background-color: var(--color-8); top: 5vw; left: 3vw; }
+
+.topic-9 .sub-topic-9-1 { background-color: var(--color-9); top: 4vw; left: -7vw; }
+.topic-9 .sub-topic-9-2 { background-color: var(--color-9); top: 6vw; left: -1vw; }
+
+.topic-10 .sub-topic-10-1 { background-color: var(--color-10); top: 1vw; left: -6vw; }
+.topic-10 .sub-topic-10-2 { background-color: var(--color-10); top: 5vw; left: -8vw; }
+.topic-10 .sub-topic-10-3 { background-color: var(--color-10); top: 8vw; left: -4vw; }
+
+.topic-12 .sub-topic-12-1 { background-color: var(--color-12); top: 1vw; left: -8vw; }
+
+.topic-13 .sub-topic-13-1 { background-color: var(--color-13); top: -5vw; left: -2vw; }
+.topic-13 .sub-topic-13-2 { background-color: var(--color-13); top: -2vw; left: -9vw; }
+.topic-13 .sub-topic-13-3 { background-color: var(--color-13); top: 2vw; left: -8vw; }
+
+.topic-14 .sub-topic-14-1 { background-color: var(--color-14); top: -5vw; left: 1vw; }
+.topic-14 .sub-topic-14-2 { background-color: var(--color-14); top: -3vw; left: -4vw; }
+.topic-14 .sub-topic-14-3 { background-color: var(--color-14); top: 1vw; left: -7vw; }
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/*Line*/
+.lines-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.line {
+    stroke: #000;
+    stroke-width: 1;
+    opacity: 0;
+}
+
+.line.visible {
+    opacity: 1;
+    transition: opacity 2s ease-in-out, visibility 1.3s ease-in-out 1s;
+}
+.line.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out 0.3s, visibility 0.3s ease-in-out 0.8s;
+}
+
+.sub-line.visible {
+    opacity: 1;
+    transition: opacity 2.3s ease-in-out, visibility 1.8s ease-in-out 1.5s;
+}
+.sub-line.hidden {
+    transition: opacity 0.3s ease-in-out 0.3s, visibility 0.3s ease-in-out 0.8s;
+}
+
+/*Topic-Toggle*/
+.topic-content {
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 80vh;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 1px 1px 7px 7px #b4afaf;
+    border-radius: 10px;
+    z-index: 20;
+}
+
+/*BG*/
+.bg-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15vw;
+    width: 15vw;
+    background-color: rgba(243, 179, 179, 0.3);
+    border-radius: 50%;
+    animation: up-down 5s linear infinite;
+}
+
+@keyframes up-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+}

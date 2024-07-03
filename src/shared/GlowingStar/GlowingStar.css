@@ -1,0 +1,14 @@
+/*Star*/
+.glowing-star {
+    animation: glow 3s infinite;
+    margin-right: 1vw;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #000000;
+    }
+    50% {
+        color: #ffffff;
+    }
+}
