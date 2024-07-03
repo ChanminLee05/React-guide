@@ -63,7 +63,7 @@ const Brainstorm: React.FC<BrainstormProps> = (({topics}) => {
                 if (topicElement) {
                     const topicRect = topicElement.getBoundingClientRect();
                     const topicX = topicRect.left + scrollOffsetX + topicRect.width / 2 ;
-                    const topicY = topicRect.top + scrollOffsetY + topicRect.height / 2 - 1435;
+                    const topicY = topicRect.top + scrollOffsetY + topicRect.height / 2 - 1735;
 
                     const line = document.getElementById(`line-${index + 1}`);
                     if (line) {
@@ -85,7 +85,7 @@ const Brainstorm: React.FC<BrainstormProps> = (({topics}) => {
                         if (subTopicElement) {
                             const subTopicRect = subTopicElement.getBoundingClientRect();
                             const subTopicX = subTopicRect.left + scrollOffsetX + subTopicRect.width / 2 ;
-                            const subTopicY = subTopicRect.top + scrollOffsetY + subTopicRect.height / 2 - 1435;
+                            const subTopicY = subTopicRect.top + scrollOffsetY + subTopicRect.height / 2 - 1735;
 
                             const subLine = document.getElementById(`sub-line-${index + 1}-${subIndex + 1}`);
                             if (subLine) {
